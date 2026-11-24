@@ -1,0 +1,65 @@
+import { StyleSheet } from 'react-native';
+
+import { colors, fonts, radius, spacing } from '@/constants/theme';
+
+export const styles = StyleSheet.create({
+  page: {
+    flexGrow: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: spacing.lg,
+    backgroundColor: colors.surface,
+  },
+  card: { width: '100%', maxWidth: 420, gap: spacing.md },
+  brand: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
+  brandIcon: {
+    width: 40,
+    height: 40,
+    borderRadius: radius.md,
+    backgroundColor: colors.brand,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  row: { flexDirection: 'row', alignItems: 'center', gap: spacing.xs },
+  adminTag: {
+    paddingHorizontal: spacing.xs,
+    paddingVertical: 1,
+    borderRadius: radius.sm,
+    backgroundColor: colors.brand,
+  },
+  heading: { gap: spacing.xs },
+  form: { gap: spacing.sm },
+  field: { gap: spacing.xs },
+  input: {
+    minHeight: 44,
+    paddingHorizontal: spacing.gutterSm,
+    borderRadius: radius.lg,
+    borderWidth: 1,
+    borderColor: colors.surfaceBorder,
+    backgroundColor: colors.surfaceContainerLowest,
+    fontFamily: fonts.interRegular,
+    fontSize: 14,
+    color: colors.onSurface,
+  },
+  inputFocused: { borderColor: colors.brand },
+  message: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    gap: spacing.xs,
+    padding: spacing.sm,
+    borderRadius: radius.md,
+  },
+  messageError: { backgroundColor: colors.errorContainer },
+  messageInfo: { backgroundColor: colors.telemetryTint },
+  messageText: { flex: 1 },
+  linkRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    flexWrap: 'wrap',
+    gap: spacing.sm,
+  },
+  link: { paddingVertical: spacing.xs },
+  actions: { gap: spacing.sm },
+  footnote: { textAlign: 'center' },
+});

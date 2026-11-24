@@ -1,0 +1,23 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@/assets/*": [
+        "./assets/*"
+      ],
+      "@packages/ui/*": [
+        "./packages/ui/src/*"
+      ],
+      "@packages/responsive/*": [
+        "./packages/responsive/src/*"
+      ],
+      "@packages/tanstack/query/*": [
+        "./packages/tanstack/query/src/*"
+      ]
+    }
+  }
+}
